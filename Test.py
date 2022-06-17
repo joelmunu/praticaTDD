@@ -21,6 +21,16 @@ class TestContador(unittest.TestCase):
         self.assertEqual(contador1.valorIncremento, 1)
         self.assertEqual(contador1.valorLimite, 5)
 
+    def test3(self):
+        '''
+        Comprobación de los valores
+        '''
+        contador2 = Contador(valorLimite = 5)
+        contador2.__valorIncial = 1
+        self.assertEqual(contador2.getvalorInicial(), 0)
+        self.assertEqual(contador2.getvalorIncremento(), 1)
+        self.assertEqual(contador2.getvalorLimite(), 5)
+
 if __name__=="__main__":
     unittest.main()
     
