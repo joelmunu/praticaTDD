@@ -27,9 +27,9 @@ class TestContador(unittest.TestCase):
         '''
         contador2 = Contador(valorLimite = 5)
         contador2.__valorIncial = 1
-        self.assertEqual(contador2.getvalorInicial(), 0)
-        self.assertEqual(contador2.getvalorIncremento(), 1)
-        self.assertEqual(contador2.getvalorLimite(), 5)
+        self.assertEqual(contador2.getValorInicial(), 0)
+        self.assertEqual(contador2.getValorIncremento(), 1)
+        self.assertEqual(contador2.getValorLimite(), 5)
 
 if __name__=="__main__":
     unittest.main()
