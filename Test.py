@@ -11,6 +11,16 @@ class TestContador(unittest.TestCase):
         self.assertEqual(contador.valorInicial, 2)
         self.assertEqual(contador.valorIncremento, 2)
 
+    def test2(self):
+        '''
+        Este test comprueba que si no se indaca nada, el valor inicial y el incremento
+        se inicializarán a 0 y a 1, respectivamente
+        '''
+        contador1 = Contador(valorLimite = 5)
+        self.assertEqual(contador1.valorInicial, 0)
+        self.assertEqual(contador1.valorIncremento, 1)
+        self.assertEqual(contador1.valorLimite, 5)
+
 if __name__=="__main__":
     unittest.main()
     
